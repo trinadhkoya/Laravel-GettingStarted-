@@ -24,4 +24,5 @@ Route::get('/welcome',function(){
 //creating another route which passes through controller
 //when browser hits with given url like localhost:8080/hello.Request travells through Controller and find the method hello in that controller.Then process the corresponding view
 
-Route::get('/hello/{name}','Controller@hello');
+Route::get('/hello','Controller@hello');
+Route::get('/index/{name}','Controller@index');
