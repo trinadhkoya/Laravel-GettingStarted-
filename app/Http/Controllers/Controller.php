@@ -16,7 +16,7 @@ class Controller extends BaseController
     	//return "<center>Hello ! Welcome </center>";
     	//you can return view too as i did earlier
     	//you can't return two views at a time.it follows FIFO
-    	return view('welcome');
+    	return view('index');
     }
 
 
