@@ -1,35 +1,33 @@
 	<?php
 
-	/*
-	|--------------------------------------------------------------------------
-	| Web Routes
-	|--------------------------------------------------------------------------
-	|
-	| This file is where you may define all of the routes that are handled
-	| by your application. Just tell Laravel the URIs it should respond
-	| to using a Closure or controller method. Build something great!
-	|
-	*/
-	Route::get('/login',function(){
-			return view('login');
+	
+    // Put all your routes inside here.
+
+	Route::get('/hello','Controller@hello');
+	Route::get('/index/{name}','Controller@index');
+
+	Route::get('/welcome',function(){
+	return view('welcome');
 	});
-
-	Route::post('/logmein','LoginController@logmein');
-
 
 	Route::get('/', function () {
 	return view('index');
 	});
 
-	//i defined a ruote with localhost:8080/welcome
-	Route::get('/welcome',function(){
 
-	return view('welcome');
+	Route::post('/logmein','LoginController@logmein');
+		
+	Route::get('/login',function(){
+			return view('login');
 	});
 
-	//creating another route which passes through controller
-	//when browser hits with given url like localhost:8080/hello.Request travells through Controller and find the method hello in that controller.Then process the corresponding view
+	Route::post('/registeration','SignUpController@letMeSignUp');
 
-	Route::get('/hello','Controller@hello');
-	Route::get('/index/{name}','Controller@index');
+	Route::get('/register',function(){
+		return view('signup');
+	});
+
+
 	
+
+	?>

@@ -44,7 +44,7 @@
 			<li><a href="#about">ABOUT ME</a></li>
 			<li><a href="#service">SERVICES</a></li>
 			<li><a href="#work">MY WORK</a></li>
-			<li><a href="#contact">CONTACT ME</a></li>
+			<li><a href="/register">Sign Up</a></li>
 			<li><a href="/login">Login</a></li>
 
 		  </ul>

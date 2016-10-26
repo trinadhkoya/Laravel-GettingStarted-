@@ -7,13 +7,12 @@
 <body>
 <center>
 	<form action="/logmein" method="post">
-	<input type="hidden" name="_token" value="{{csrf_token()}}">
 	USERNAME:<input type="text" name="username"><br>
 	<br></br>
 	PASSWORD:<input type="password" name="password"><br>
 	<br></br>
 	<input type="submit" name="login" value="Login">
-
+	<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
 	</form>
 
 
