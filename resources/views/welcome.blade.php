@@ -75,7 +75,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Hello Trinadh !! welcome to your first laravel post
+                    Hello Welcome {{$name}}
                 </div>
 
                 <!-- <div class="links">
