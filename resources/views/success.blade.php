@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Login- Page</title>
+	<title>Success- Page</title>
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:100">
 </head>
 <body>
